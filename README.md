@@ -21,7 +21,7 @@
 
 ## 🤖 AI Chat System
 
-Solrais features a **full AI chat system** powered by Groq API with access to real-time server data. Unlike basic chatbots, Solrais can actually **look up information** and **perform actions** using callable tools.
+Solrais features a **full AI chat system** powered by Groq API with access to real-time server data. Unlike basic chatbots, Solrais can actually **look up information** and **perform actions** using callable tools. Solrais is currently mainly powered by gpt-oss-120b (high)
 
 ### How It Works
 
@@ -48,6 +48,12 @@ Mention Solrais or use the `s.` prefix to start chatting. The AI has:
 > *"Generate an image of a glitch biome"*
 > *"What does this screenshot show?"*
 
+### Solrais is powered by multiple AIs, such as:
+- gpt-oss-120b (high) for talking and tool calling
+- qwen3-32b for tool calling
+- llama-4-scout-17b-16e-instruct for vision
+- orpheus-v1-english (might be deprecated soon) for TTS
+- whisper-3 for STT
 ---
 
 ## 🌟 Features
