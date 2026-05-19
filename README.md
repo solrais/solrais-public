@@ -103,16 +103,10 @@ Mention Solrais or use the `s.` prefix to start chatting. The AI has:
 ### 🖥️ Web Dashboard
 - Real-time overview: active macroers, session count, total hours, biomes detected
 - Relay node status with online/offline indicators
-- One-click relay node restart from browser
+- One-click relay node restart from browser (bleh)
 - Top 25 leaderboard view
 - Maintenance mode toggle
-- Discord OAuth2 authentication for secure access
-
-### 🐕 Watchdog System
-- **Dedicated handler** monitors the main bot and all relay nodes 24/7
-- Automatic alerts when any node goes offline
-- Auto-clearing alerts when the node recovers
-- Configurable ping role for watchdog notifications
+- Discord OAuth2 authentication for secure access (doesnt work)
 
 ---
 
@@ -127,47 +121,11 @@ Discord ──► Relay Bot 1 ──► Main Bot ──► Dashboard
           ──► Watchdog Handler (monitors everything)
 ```
 
-- **Relay bots** (3 nodes) receive webhooks from macro clients and forward them
+- **Relay bots** (2 nodes since dxrk is stupid) receive webhooks from macro clients and forward them
 - **Main bot** processes sessions, relays, commands, and AI
-- **Watchdog handler** keeps everything alive and alerts staff on failure
+- **Watchdog handler** literally just notifies ppl if any node goes offline
 - **Web dashboard** provides live status and remote control
 
----
-
-## 🎮 Commands Overview
-
-### User Commands
-| Command | Description |
-|---------|-------------|
-| `/stats` | View your macro statistics and data path |
-| `/myprogress` | 7-day activity graph |
-| `/leaderboards` | View macro leaderboard |
-| `/daily` | Daily quest status |
-| `/achievements` | View your unlocked achievements |
-| `/link_roblox` | Link your Roblox account for verification |
-| `/bugfix` | Report a bug |
-| `/suggestion` | Submit a suggestion |
-
-### AI Chat
-| Trigger | Behaviour |
-|---------|-----------|
-| `@Solrais` | Ping the bot to start an AI conversation |
-| `s.<message>` | Prefix any message with `s.` to chat |
-| Image in chat | Solrais can analyze images you send |
-
-### Staff Commands
-| Command | Description |
-|---------|-------------|
-| `/fix_missing_rank` | Restore macroer rank to affected users |
-| `/force_roblox_link` | Force-link a Discord user to a Roblox account |
-| `/category` | Manage tracked categories |
-| `/solraisconfig` | Configure delays, weather, and webhooks |
-| `/macro_block` | Block macro versions |
-| `/node_restart` | Restart relay nodes |
-| `/maintenance` | Toggle maintenance mode |
-| `/check_activity` | Activity audit |
-
----
 
 ## 🏗️ Project Structure
 
@@ -186,12 +144,12 @@ data/                    — Runtime data (users, config, sessions)
 
 ## 📜 License
 
-**PRIVATE** — All rights reserved. This code is the exclusive property of its owner.
+**PRIVATE** — All rights reserved. This code is the exclusive property of us (dxrkfire and neru__.)
 
 > [!CAUTION]
-> **Do not share, redistribute, or use this code without permission.**
+> **Do not share, redistribute, or use this code without permission. (u cant)**
 > Solrais is a private service — no public downloads, self-hosting, or distribution.
 
 ---
 
-*Built and maintained by **dxrkfire** & **n3ru__** for the Solrais community.*
+*Built and maintained by **dxrkfire** & **n3ru__** for the glichs community.*
