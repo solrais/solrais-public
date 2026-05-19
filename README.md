@@ -1,9 +1,8 @@
-# 🤖 Solrais — Macro Tracker & AI Assistant
+# 🤤 Solrais — Macro Tracker & AI Assistant
 
 > Solrais is currently on **version v1.4.3** — a *PRIVATE* Discord bot for **macro session tracking**, **AI-powered chat**, **biome relay systems**, and more ig
 
 ![Version](https://img.shields.io/badge/version-v1.4.3-blue?style=flat-square)
-![Node](https://img.shields.io/badge/node-18%2B-green?style=flat-square)
 ![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)
 ![License](https://img.shields.io/badge/license-Private-red?style=flat-square)
 
@@ -12,29 +11,32 @@
 ## ⚠️ NOTICE
 
 > [!IMPORTANT]
-> The repository containing the actual code is **PRIVATE**. It is not available for public download or distribution. Solrais runs exclusively on the owner's infrastructure. Do not share, distribute, or publish any part of this code without explicit permission.
+> The repository containing the actual code is **PRIVATE**. It is not available for public download or distribution. Solrais runs exclusively on our servers. Do not share, distribute, or publish any part of this code without explicit permission.
+-# well u cant anyway the code is private lol
 
 > [!CAUTION]
 > **This is not a self-hosted bot.** Solrais is operated on private servers and accessed through Discord. No download or self-hosting option is available.
+-# yoo staff pls dont leak the dashboard link its not protected ok thanks :D
 
 ---
 
-## 🤖 AI Chat System
+## 💅 AI Chat System
 
-Solrais features a **full AI chat system** powered by Groq API with access to real-time server data. Unlike basic chatbots, Solrais can actually **look up information** and **perform actions** using callable tools. Solrais is currently mainly powered by gpt-oss-120b (high)
+Solrais features a **full AI chat system** powered by Groq API with access to real-time server data. Unlike basic chatbots, Solrais can actually **look up information** and **perform actions** using callable tools. Solrais is currently mainly powered by gpt-oss-120b (high), I must also warn users that AI can make mistakes and this one is NOTERIOUS for making mistakes constantly, please be careful on the info given by the AI and always double-check
 
 ### How It Works
 
 Mention Solrais or use the `s.` prefix to start chatting. The AI has:
 
-- **🧠 Memory & Profile Learning** — Solrais remembers how you talk, your personality traits, interests, and writing style. The more you chat, the more personalized responses become.
-- **🔧 12+ Callable Tools** — Instead of guessing, Solrais runs actual tools to fetch data:
+- **🧠 Memory & Profile Learning** — Solrais remembers how you talk, your personality traits, interests, and writing style. The more you chat, the more personalized responses become. (CAN be disabled with a command)
+- **🔧 20+ Callable Tools** — Instead of guessing, Solrais runs actual tools to fetch data:
   - Query user stats, sessions, and leaderboard positions
   - Search the knowledge base for Sol's RNG mechanics, auras, potions, and biomes
   - Look up server members and their macro activity
   - Find users by username with fuzzy/typo-tolerant matching
   - Generate images using the Magnific API
   - Analyze images sent in chat
+  - Look up answers on the internet
 - **🎯 Smart Context** — Understands follow-up questions, comparisons ("who has more hours, X or Y?"), and multi-turn conversations.
 - **📸 Vision Support** — Send Solrais an image and it can analyze what's in it.
 - **🛡️ Content Filtering** — Built-in safeguard pipeline checks responses for consistency and safety before posting.
@@ -62,7 +64,7 @@ Mention Solrais or use the `s.` prefix to start chatting. The AI has:
 - **Auto-detection** of macro start/stop events from webhooks
 - **Live session stats** — duration, biome count, streak tracking
 - **Per-user history** surviving restarts and reboots
-- **Multi-software support** — MultiScope, Coteab Macro, SolsScope, Maxstellar's Biome Macro, J.Jram, fishSol, EggSol, and more
+- **Multi-software support** — MultiScope, Coteab Macro, SolsScope, Maxstellar's Biome Macro, J.Jram, fishSol, EggSol, and auto compatibility (temporary) with other un-registered macros (like DroidScope i forogr to register it)
 - **Macro version detection** and optional blacklisting
 
 ### 🌐 Biome Relay System
