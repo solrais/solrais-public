@@ -108,37 +108,10 @@ Mention Solrais or use the `s.` prefix to start chatting. The AI has:
 - Maintenance mode toggle
 - Discord OAuth2 authentication for secure access (doesnt work)
 
----
-
-## 🔧 Architecture
-
-Solrais runs as a **distributed multi-node system**:
-
-```
-Discord ──► Relay Bot 1 ──► Main Bot ──► Dashboard
-          ──► Relay Bot 2 ──► Main Bot ──► AI (Groq API)
-          ──► Relay Bot 3 ──► Main Bot ──► Webhooks
-          ──► Watchdog Handler (monitors everything)
-```
-
 - **Relay bots** (2 nodes since dxrk is stupid) receive webhooks from macro clients and forward them
 - **Main bot** processes sessions, relays, commands, and AI
 - **Watchdog handler** literally just notifies ppl if any node goes offline
 - **Web dashboard** provides live status and remote control
-
-
-## 🏗️ Project Structure
-
-```
-src/
-├── bot/server/          — Slash commands, config UI, interactions
-├── services/server/     — Core logic: AI, macros, relays, webhooks
-└── utils/server/        — Data layer, constants, config handler
-relay-bot-{1..3}/        — Relay nodes for webhook processing
-handler/                 — Watchdog system
-server.js                — Express web dashboard
-data/                    — Runtime data (users, config, sessions)
-```
 
 ---
 
