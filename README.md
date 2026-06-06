@@ -15,7 +15,7 @@
 
 well u cant anyway the code is private lol
 
-> [!CAUTION]
+> [!WARNING]
 > **This is not a self-hosted bot.** Solrais is operated on private servers and accessed through Discord. No download or self-hosting option is available.
 
 yoo staff pls dont leak the dashboard link its not protected ok thanks :D
