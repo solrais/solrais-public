@@ -12,11 +12,13 @@
 
 > [!IMPORTANT]
 > The repository containing the actual code is **PRIVATE**. It is not available for public download or distribution. Solrais runs exclusively on our servers. Do not share, distribute, or publish any part of this code without explicit permission.
--# well u cant anyway the code is private lol
+
+well u cant anyway the code is private lol
 
 > [!CAUTION]
 > **This is not a self-hosted bot.** Solrais is operated on private servers and accessed through Discord. No download or self-hosting option is available.
--# yoo staff pls dont leak the dashboard link its not protected ok thanks :D
+
+yoo staff pls dont leak the dashboard link its not protected ok thanks :D
 
 ---
 
