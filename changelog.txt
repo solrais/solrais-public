@@ -1,3 +1,20 @@
+# 🚀 Release v1.4.6 — Bot/Dashboard Split, Bug Fixes & New Features
+
+> Complete architecture split, dormant/undormant fix, achievements auto-check, new create-channel command, and more.
+
+### 🖥️ Web Dashboard
+
+- **Privacy Policy & Terms of Service tabs**: Legal pages are now embedded directly in the dashboard sidebar, styled with the dashboard's theme. No more standalone HTML pages.
+- **Local Testing Server**: New `server-local.js` for testing the dashboard on `localhost:24593` without needing the Discord bot client or OAuth setup.
+- **Updated Version**: All version references bumped to v1.4.6 across the codebase.
+
+### 🛡️ Bug Fixes & Improvements
+
+- Fixed various dashboard styling inconsistencies
+- Improved sidebar navigation with Legal section
+
+> SOLRAIS IS ENTIRELY PRIVATE, VIEWING / TAMPERING / MODIFYING / TAKING THE CODE WITHOUT PERMISSION IS STRICTLY FORBIDDEN
+
 # 🚀 Release v1.4.3 — Relay Expansion & AI Refinements
 
 > This update adds Relay Node 3, the `/fix_missing_rank` command, verification auto-reply in the support channel, significant AI improvements, and various bug fixes across the board.
