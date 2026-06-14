@@ -1,9 +1,8 @@
-# 🤖 Solrais — Macro Tracker & AI Assistant
+# 🤤 Solrais — Macro Tracker & AI Assistant
 
-> Solrais is currently on **version v1.4.6** — a powerful multi-server Discord bot for **macro session tracking**, **AI-powered chat**, **biome relay systems**, and **community management** — built for Sol's RNG and similar Roblox macro communities.
+> Solrais is currently on **version v1.4.3** — a *PRIVATE* Discord bot for **macro session tracking**, **AI-powered chat**, **biome relay systems**, and more ig
 
-![Version](https://img.shields.io/badge/version-v1.4.6-blue?style=flat-square)
-![Node](https://img.shields.io/badge/node-18%2B-green?style=flat-square)
+![Version](https://img.shields.io/badge/version-v1.4.3-blue?style=flat-square)
 ![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)
 ![License](https://img.shields.io/badge/license-Private-red?style=flat-square)
 
@@ -12,29 +11,34 @@
 ## ⚠️ NOTICE
 
 > [!IMPORTANT]
-> This repository is **PRIVATE**. The code is not available for public download or distribution. Solrais runs exclusively on the owner's infrastructure. Do not share, distribute, or publish any part of this code without explicit permission.
+> The repository containing the actual code is **PRIVATE**. It is not available for public download or distribution. Solrais runs exclusively on our servers. Do not share, distribute, or publish any part of this code without explicit permission.
 
-> [!CAUTION]
+well u cant anyway the code is private lol
+
+> [!WARNING]
 > **This is not a self-hosted bot.** Solrais is operated on private servers and accessed through Discord. No download or self-hosting option is available.
+
+yoo staff pls dont leak the dashboard link its not protected ok thanks :D
 
 ---
 
-## 🤖 AI Chat System
+## 💅 AI Chat System
 
-Solrais features a **full AI chat system** powered by Groq API with access to real-time server data. Unlike basic chatbots, Solrais can actually **look up information** and **perform actions** using callable tools.
+Solrais features a **full AI chat system** powered by Groq API with access to real-time server data. Unlike basic chatbots, Solrais can actually **look up information** and **perform actions** using callable tools. Solrais is currently mainly powered by gpt-oss-120b (high), I must also warn users that AI can make mistakes and this one is NOTERIOUS for making mistakes constantly, please be careful on the info given by the AI and always double-check
 
 ### How It Works
 
 Mention Solrais or use the `s.` prefix to start chatting. The AI has:
 
-- **🧠 Memory & Profile Learning** — Solrais remembers how you talk, your personality traits, interests, and writing style. The more you chat, the more personalized responses become.
-- **🔧 12+ Callable Tools** — Instead of guessing, Solrais runs actual tools to fetch data:
+- **🧠 Memory & Profile Learning** — Solrais remembers how you talk, your personality traits, interests, and writing style. The more you chat, the more personalized responses become. (CAN be disabled with a command)
+- **🔧 20+ Callable Tools** — Instead of guessing, Solrais runs actual tools to fetch data:
   - Query user stats, sessions, and leaderboard positions
   - Search the knowledge base for Sol's RNG mechanics, auras, potions, and biomes
   - Look up server members and their macro activity
   - Find users by username with fuzzy/typo-tolerant matching
   - Generate images using the Magnific API
   - Analyze images sent in chat
+  - Look up answers on the internet
 - **🎯 Smart Context** — Understands follow-up questions, comparisons ("who has more hours, X or Y?"), and multi-turn conversations.
 - **📸 Vision Support** — Send Solrais an image and it can analyze what's in it.
 - **🛡️ Content Filtering** — Built-in safeguard pipeline checks responses for consistency and safety before posting.
@@ -48,6 +52,12 @@ Mention Solrais or use the `s.` prefix to start chatting. The AI has:
 > *"Generate an image of a glitch biome"*
 > *"What does this screenshot show?"*
 
+### Solrais is powered by multiple AIs, such as:
+- gpt-oss-120b (high) for talking and tool calling
+- qwen3-32b for tool calling
+- llama-4-scout-17b-16e-instruct for vision
+- orpheus-v1-english (might be deprecated soon) for TTS
+- whisper-3 for STT
 ---
 
 ## 🌟 Features
@@ -56,7 +66,7 @@ Mention Solrais or use the `s.` prefix to start chatting. The AI has:
 - **Auto-detection** of macro start/stop events from webhooks
 - **Live session stats** — duration, biome count, streak tracking
 - **Per-user history** surviving restarts and reboots
-- **Multi-software support** — MultiScope, Coteab Macro, SolsScope, Maxstellar's Biome Macro, J.Jram, fishSol, EggSol, and more
+- **Multi-software support** — MultiScope, Coteab Macro, SolsScope, Maxstellar's Biome Macro, J.Jram, fishSol, EggSol, and auto compatibility (temporary) with other un-registered macros (like DroidScope i forogr to register it)
 - **Macro version detection** and optional blacklisting
 
 ### 🌐 Biome Relay System
@@ -95,95 +105,26 @@ Mention Solrais or use the `s.` prefix to start chatting. The AI has:
 ### 🖥️ Web Dashboard
 - Real-time overview: active macroers, session count, total hours, biomes detected
 - Relay node status with online/offline indicators
-- One-click relay node restart from browser
+- One-click relay node restart from browser (bleh)
 - Top 25 leaderboard view
 - Maintenance mode toggle
-- Discord OAuth2 authentication for secure access
+- Discord OAuth2 authentication for secure access (doesnt work)
 
-### 🐕 Watchdog System
-- **Dedicated handler** monitors the main bot and all relay nodes 24/7
-- Automatic alerts when any node goes offline
-- Auto-clearing alerts when the node recovers
-- Configurable ping role for watchdog notifications
-
----
-
-## 🔧 Architecture
-
-Solrais runs as a **distributed multi-node system**:
-
-```
-Discord ──► Relay Bot 1 ──► Main Bot ──► Dashboard
-          ──► Relay Bot 2 ──► Main Bot ──► AI (Groq API)
-          ──► Relay Bot 3 ──► Main Bot ──► Webhooks
-          ──► Watchdog Handler (monitors everything)
-```
-
-- **Relay bots** (3 nodes) receive webhooks from macro clients and forward them
+- **Relay bots** (2 nodes since dxrk is stupid) receive webhooks from macro clients and forward them
 - **Main bot** processes sessions, relays, commands, and AI
-- **Watchdog handler** keeps everything alive and alerts staff on failure
+- **Watchdog handler** literally just notifies ppl if any node goes offline
 - **Web dashboard** provides live status and remote control
-
----
-
-## 🎮 Commands Overview
-
-### User Commands
-| Command | Description |
-|---------|-------------|
-| `/stats` | View your macro statistics and data path |
-| `/myprogress` | 7-day activity graph |
-| `/leaderboards` | View macro leaderboard |
-| `/daily` | Daily quest status |
-| `/achievements` | View your unlocked achievements |
-| `/link_roblox` | Link your Roblox account for verification |
-| `/bugfix` | Report a bug |
-| `/suggestion` | Submit a suggestion |
-
-### AI Chat
-| Trigger | Behaviour |
-|---------|-----------|
-| `@Solrais` | Ping the bot to start an AI conversation |
-| `s.<message>` | Prefix any message with `s.` to chat |
-| Image in chat | Solrais can analyze images you send |
-
-### Staff Commands
-| Command | Description |
-|---------|-------------|
-| `/fix_missing_rank` | Restore macroer rank to affected users |
-| `/force_roblox_link` | Force-link a Discord user to a Roblox account |
-| `/category` | Manage tracked categories |
-| `/solraisconfig` | Configure delays, weather, and webhooks |
-| `/macro_block` | Block macro versions |
-| `/node_restart` | Restart relay nodes |
-| `/maintenance` | Toggle maintenance mode |
-| `/check_activity` | Activity audit |
-
----
-
-## 🏗️ Project Structure
-
-```
-src/
-├── bot/server/          — Slash commands, config UI, interactions
-├── services/server/     — Core logic: AI, macros, relays, webhooks
-└── utils/server/        — Data layer, constants, config handler
-relay-bot-{1..3}/        — Relay nodes for webhook processing
-handler/                 — Watchdog system
-server.js                — Express web dashboard
-data/                    — Runtime data (users, config, sessions)
-```
 
 ---
 
 ## 📜 License
 
-**PRIVATE** — All rights reserved. This code is the exclusive property of its owner.
+**PRIVATE** — All rights reserved. This code is the exclusive property of us (dxrkfire and neru__.)
 
 > [!CAUTION]
-> **Do not share, redistribute, or use this code without permission.**
+> **Do not share, redistribute, or use this code without permission. (u cant)**
 > Solrais is a private service — no public downloads, self-hosting, or distribution.
 
 ---
 
-*Built and maintained by **dxrkfire** & **n3ru__** for the Solrais community.*
+*Built and maintained by **dxrkfire** & **n3ru__** for the glichs community.*
